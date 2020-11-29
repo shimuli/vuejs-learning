@@ -8,6 +8,7 @@ import Calculator from "./pages/Calculator";
 import ReusableMpdal from "./pages/ReusableModal";
 import Chats from "./pages/Chats";
 import store from "./store/index";
+import UserCrud from "./pages/UserCrud"
 
 const routes = [
   { path: "/", component: Home },
@@ -18,6 +19,8 @@ const routes = [
   { path: "/calculator", component: Calculator, meta: { middleware: "auth" }, },
   { path: "/reusable-modal", component: ReusableMpdal },
   {path: "/chats",component: Chats,meta: { middleware: "auth" },},
+  {path: "/chats",component: Chats,meta: { middleware: "auth" },},
+  { path: "/user-crud", component: UserCrud },
 ];
 
 const router = createRouter({
